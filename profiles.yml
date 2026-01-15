@@ -1,0 +1,13 @@
+ecommerce_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: jswfpxb-htb89118
+      user: Tendu1997
+      password: Tejaswee143@#%
+      role: ACCOUNTADMIN
+      database: ANALYTICS
+      warehouse: DBT_WH
+      schema: dbt_temp  # Generic name for models without custom schema
+      threads: 4

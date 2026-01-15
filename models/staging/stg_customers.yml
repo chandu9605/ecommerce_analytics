@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned and standardized customer data"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+        tests:
+          - unique
+          - not_null
+
+      - name: email
+        description: "Customer email address"
+        tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: "Customer first name (lowercase)"
+        tests:
+          - not_null
+
+      - name: last_name
+        description: "Customer last name (lowercase)"
+        tests:
+          - not_null

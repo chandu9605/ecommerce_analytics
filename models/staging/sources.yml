@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: ecommerce_raw
+    description: "Raw e-commerce data from application database"
+    database: RAW_DATA
+    schema: ECOMMERCE
+    tables:
+      - name: customers
+        description: "Raw customer records"
+        columns:
+          - name: customer_id
+            description: "Primary key"
+
+      - name: products
+        description: "Product catalog"
+        columns:
+          - name: product_id
+            description: "Primary key"
+
+      - name: orders
+        description: "Order transactions"
+        columns:
+          - name: order_id
+            description: "Primary key"
+
+      - name: order_items
+        description: "Line items for each order"
+        columns:
+          - name: order_item_id
+            description: "Primary key"
